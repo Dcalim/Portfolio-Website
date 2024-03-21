@@ -1,0 +1,129 @@
+body {
+    background-color: #e4e9ec;
+    overflow-x: hidden;
+    cursor: default;
+}
+.navbar {
+    position: fixed;
+    z-index: 1;
+    padding: 10px;
+    display: flex;
+    padding-top: 0%;
+    padding-bottom: 0%;
+    width: 100%;
+    background-color: #f5f5f5;
+    justify-content: space-between;
+}
+
+.navlist {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    margin-right: 30px;
+    font-weight: bold;
+}
+
+.navlist li {
+    cursor: pointer;
+    color: 	#0e1111;
+    margin-right: 45px;  
+}
+
+.navlist li:hover{
+    color: #414a4c;
+}
+
+.navlist :last-child {
+    margin-right: 75px;
+    align-content: center;
+    padding: 10px 25px 10px 25px;
+    top: 0;
+    color: #f5f5f5;
+    border-radius: 10px;
+    background-color: #006EA0;
+}
+
+.navlist :last-child:hover{
+    color: #f5f5f5;
+    background-color: #0796D8;
+}
+
+.logo {
+    color: 	#0e1111;
+    cursor: pointer;
+    margin-left: 30px;
+    font-family: "Yellowtail", cursive;
+}
+
+.logo:hover{
+    color: #414a4c;
+}
+.home {
+    display: flex;
+    position: relative;
+    padding-top: 80px;
+    height: 100vh; /* Set the height to 100% of the viewport height */
+    justify-content: space-between; 
+}
+
+.home-text {
+    align-self: center;
+    align-items: center;
+    justify-content: flex-start;
+    margin-left: 5%;
+}
+
+.home-text h1, h3{
+    font-family: "Bebas Neue", sans-serif;
+    color: #0e1111;
+}
+
+.home-text h1{
+    margin: -25px 0px -25px 0px;
+    letter-spacing: 5px;
+    font-size: 70px;
+}
+
+.home-text button{
+    cursor: pointer;
+    font-family: "Bebas Neue", sans-serif;
+    border: none;
+    padding: 5px 15px 5px 15px;
+    color: #f5f5f5;
+    border-radius: 10px;
+    box-shadow: 5px 5px 75px 15px rgba(65,74,76,0.25);
+    background-color: #006EA0;
+    letter-spacing: 2px;
+    font-size: 20px;
+}
+
+.home-text button:hover{
+    background-color: #0796D8;
+}
+
+.home-text h2, h4{
+    font-family: "Montserrat", sans-serif;
+    color: #006EA0;
+}
+
+.Photo-Shape {
+    clip-path: polygon(40% 0, 100% 0, 100% 100%, 0% 100%);
+    object-fit: fill;
+    width: 65%; 
+    height: 90%; 
+}
+
+.Photo-Shape img {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
+
+
+
+
+
+
+
+
+
