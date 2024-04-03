@@ -5,11 +5,11 @@ body {
 }
 .navbar {
     position: fixed;
+    top: 0;
     z-index: 1;
-    padding: 10px;
     display: flex;
-    padding-top: 0%;
-    padding-bottom: 0%;
+    padding-top: 0;
+    padding-bottom: 0;
     width: 100%;
     background-color: #f5f5f5;
     justify-content: space-between;
@@ -36,6 +36,12 @@ body {
 .navlist li:hover{
     scale: 1.1;
     transition: 0.3s;
+}
+
+.navlist li:active .navlist{
+    color: #0796D8;
+    text-decoration: underline;
+    text-underline-offset: 7px;
 }
 
 .navlist li a:hover{
@@ -204,18 +210,28 @@ footer {
 .footer div:not(first-child){
     padding-left: 20%;
 }
-.footer h4{
+.footer h4 a{
     color: #353839;
     display: block;
     list-style: none;
-    margin-left: -18px;
+    margin-left: -24px;
     font-size: 12px;
-    line-height: 0.5em;
+    line-height: 1em;
+}
+
+.footer div{
+    width: 8%;
+}
+
+.footer h2 a{
+    color: #353839;
+    font-size: 1em;
 }
 
 .footer h1 a{
     font-family: "Yellowtail", cursive;
     color: #353839;
+    line-height: 1em;
 }
 
 .footer h1 a:hover{
@@ -229,7 +245,33 @@ footer {
     color: #353839;
 }
 
+#about-title {
+    padding: 100px 0px 0px 75px;
+    color: #353839;
+    text-align: left; 
+    font-size: 3em;
+}
+
 .about {
+    display: flex;
+    padding-top: 0px;
+    height: 100vh;
+    width: auto;
+    justify-content: space-evenly;
+}
+
+span{
+    justify-content: center;
+    padding: 0px 75px 0px 75px;
+}
+
+.about img{
+    height: 75vh;
+    width: auto;
+    padding-top: 0px;
+}
+
+.Education {
     display: flex;
     padding-top: 100px;
     height: 100vh;
@@ -237,23 +279,63 @@ footer {
     justify-content: space-evenly;
 }
 
-.about span{
-    justify-content: center;
-    padding: 0px 125px 0px 125px;
-}
-
-.about h1 {
+#Education-Leadership-title{
     color: #353839;
-    font-size: 60px;
+    font-size: 3em;
+    padding: 0px 0px 0px 75px;
+    line-height: 0;
     text-align: left; 
-    font-size: 50px;
+
+}
+.Education h2{
+    padding-top: 100px;
 }
 
-.about img{
+.Education img{
     height: 75vh;
     width: auto;
-    padding-top: 50px;
+    padding-top: 0px;
 }
+
+.Leadership {
+    display: flex;
+    padding-top: 0px;
+    justify-content: space-evenly;
+}
+
+.Leadership img{
+    height: 75vh;
+    width: auto;
+}
+
+.Experience {
+    display: flex;
+    padding-top: 100px;
+    justify-content: space-evenly;
+}
+
+#Experience-title{
+    color: #353839;
+    font-size: 3em;
+    margin: 0px 0px 0px 75px;
+    text-align: left; 
+}
+
+.Post-Info {
+    color: #353839;
+    padding: 10px 10px 100px 10px;
+    margin: 0px 0px 0px 75px;
+    opacity: 1;
+    transition: opacity 1s; 
+}
+
+.Post-Office{
+    width: 75%;
+    height: auto;
+    padding: 0px 10px 100px 10px;
+    margin: 0px 0px 0px 75px;
+}
+
 
 
 
