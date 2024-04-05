@@ -96,7 +96,7 @@ a {
 #home {
     display: flex;
     position: relative;
-    padding-top: 80px;
+    padding-top: 90px;
     height: 100vh; 
     justify-content: space-between; 
 }
@@ -231,6 +231,7 @@ footer {
 .footer h1 a{
     font-family: "Yellowtail", cursive;
     color: #353839;
+    padding-right: 200px;
     line-height: 1em;
 }
 
@@ -246,37 +247,11 @@ footer {
 }
 
 #about-title {
-    padding: 100px 0px 0px 75px;
+    padding: 150px 0px 0px 75px;
+    line-height: 0px;
     color: #353839;
     text-align: left; 
     font-size: 3em;
-}
-
-.about {
-    display: flex;
-    padding-top: 0px;
-    height: 100vh;
-    width: auto;
-    justify-content: space-evenly;
-}
-
-span{
-    justify-content: center;
-    padding: 0px 75px 0px 75px;
-}
-
-.about img{
-    height: 75vh;
-    width: auto;
-    padding-top: 0px;
-}
-
-.Education {
-    display: flex;
-    padding-top: 100px;
-    height: 100vh;
-    width: auto;
-    justify-content: space-evenly;
 }
 
 #Education-Leadership-title{
@@ -285,27 +260,6 @@ span{
     padding: 0px 0px 0px 75px;
     line-height: 0;
     text-align: left; 
-
-}
-.Education h2{
-    padding-top: 100px;
-}
-
-.Education img{
-    height: 75vh;
-    width: auto;
-    padding-top: 0px;
-}
-
-.Leadership {
-    display: flex;
-    padding-top: 0px;
-    justify-content: space-evenly;
-}
-
-.Leadership img{
-    height: 75vh;
-    width: auto;
 }
 
 .Experience {
@@ -325,8 +279,6 @@ span{
     color: #353839;
     padding: 10px 10px 100px 10px;
     margin: 0px 0px 0px 75px;
-    opacity: 1;
-    transition: opacity 1s; 
 }
 
 .Post-Office{
@@ -336,8 +288,90 @@ span{
     margin: 0px 0px 0px 75px;
 }
 
+.Portfolio{
+    display: flex;
+}
 
+.Portfolio img{
+    clip-path: polygon(0 0, 35% 0, 100% 100%, 0% 100%);
+    object-fit:fill;
+    width: 80%;
+    height: 50%;
+}
 
+#welcome {
+    display: flex;
+    position: relative;
+    padding-top: 90px;
+    height: 100vh; 
+    justify-content: space-between; 
+    transform: scaleX(-1);
+}
+
+#welcome .home-text{
+    font-family: "Bebas Neue", sans-serif;
+    transform: scaleX(-1);
+    text-align: left;
+}
+
+#welcome .home-text h2{
+    color: #353839;
+    text-indent: -1em;
+    line-height: 20px;
+    font-size: 60px;
+}
+#welcome .home-text h1{
+    color: #0796D8;
+    text-indent: 2em;
+    font-size: 100px;
+}
+
+#welcome .home-text h4{
+    color: #353839;
+    text-indent: 4em;
+    line-height: 15px;
+    font-size: 30px;
+}
+
+.half-container{
+    display: flex;
+}
+
+.half-container div{
+    width: 50%;
+    height: 100%;
+    margin: 50px 75px;
+    padding-bottom: 75px;
+}
+
+.half-container h1{
+    text-align: center;
+}
+
+.half-container li{
+    list-style-type: none;
+    font-weight: bold;
+    padding: 5px 15px 5px 15px;
+    margin: 10px 10px 10px 10px;
+    background-color: #f5f5f5;
+    display: inline-block;
+    border-radius: 10px;
+    color: #353839;
+}
+
+.half-container h4{
+    color: 	#353839;
+    font-weight: 400;
+    align-self: center;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.half-container img{
+    height: 75vh;
+    width: auto;
+    padding-top: 0px;
+}
 
 
 
