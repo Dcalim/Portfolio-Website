@@ -3,6 +3,7 @@ body {
     overflow-x: hidden;
     cursor: default;
 }
+
 .navbar {
     position: fixed;
     top: 0;
@@ -93,6 +94,7 @@ a {
     transition: 0.3s;
     color: #829397;
 }
+
 #home {
     display: flex;
     position: relative;
@@ -110,6 +112,7 @@ a {
 
 .home-text h1, h3{
     font-family: "Bebas Neue", sans-serif;
+    letter-spacing: 0.5mm;
     color: #353839;
 }
 
@@ -157,40 +160,6 @@ button a{
     width: 100%;
     height: 100%;
     object-fit: fill;
-}
-
-.overview {
-    display: flex;
-    color: #353839;
-}
-
-.overview div{
-    width: 50%;
-    margin: 50px 75px;
-    padding-bottom: 75px;
-}
-
-.overview h1{
-    text-align: center;
-}
-
-.overview li{
-    list-style-type: none;
-    font-weight: bold;
-    padding: 5px 15px 5px 15px;
-    margin: 10px 10px 10px 10px;
-    background-color: #f5f5f5;
-    display: inline-block;
-    border-radius: 10px;
-    color: #353839;
-}
-
-.overview h4{
-    color: 	#353839;
-    font-weight: 400;
-    align-self: center;
-    align-items: center;
-    justify-content: flex-start;
 }
 
 footer {
@@ -246,17 +215,10 @@ footer {
     color: #353839;
 }
 
-#about-title {
-    padding: 150px 0px 0px 75px;
-    line-height: 0px;
-    color: #353839;
-    text-align: left; 
-    font-size: 3em;
-}
-
 #Education-Leadership-title{
     color: #353839;
     font-size: 3em;
+    margin-top: 200px;
     padding: 0px 0px 0px 75px;
     line-height: 0;
     text-align: left; 
@@ -276,16 +238,35 @@ footer {
 }
 
 .Post-Info h4{
+    font-weight: 400;
     color: #353839;
-    padding: 10px 10px 100px 10px;
-    margin: 10px 0px 0px 65px;
+    padding: 20px 10px 100px 10px;
+    margin: 0px 150px 0px 0px;
 }
 
 .Post-Office{
-    width: 75%;
+    color: #353839;
+    width: 70%;
     height: auto;
-    padding: 0px 10px 100px 10px;
+    line-height: 1em;
+    padding: 0px 20px 0px 0px;
     margin: 0px 0px 0px 75px;
+}
+
+.Post-Office h2{
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.5rem;
+}
+
+.Post-Office h3{
+    font-family: "Montserrat", sans-serif;
+    letter-spacing: normal;
+    font-size: 1rem;
+}
+
+.Post-Office h5{
+    font-family: "Montserrat", sans-serif;
+    font-size: .75rem;
 }
 
 #welcome {
@@ -299,6 +280,7 @@ footer {
 
 #welcome .home-text{
     font-family: "Bebas Neue", sans-serif;
+    letter-spacing: 0.5mm;
     margin-bottom: 70px;
     transform: scaleX(-1);
     text-align: center;
@@ -362,8 +344,8 @@ footer {
 
 .all-projects{
     display: flex;
-    margin: 50px 75px;
-    padding: 100px 0px 100px 0px;
+    margin: 50px 75px 0px 75px;
+    padding: 0px 0px 150px 0px;
 }
 
 .all-projects div{
@@ -384,11 +366,23 @@ hr {
     line-height: 0em;
     margin: 50px 75px;
 }
-.all-projects ul li{
+.all-projects ul li {
     list-style: none;
+    transition: 4s;
+}
+
+.all-projects ul li a{
+    color: #000000;
+    font-weight: 500;
+    font-family: "Montserrat", sans-serif;
     font-size: 1.25em;
     line-height: 4em;
     text-indent: 0;
+}
+
+.all-projects ul li a:hover{
+    color: #829397;
+    transition: 4ms;
 }
 
 .single-container {
@@ -401,6 +395,7 @@ hr {
 
 .single-container h1{
     font-family: "Bebas Neue", sans-serif;
+    letter-spacing: 0.5mm;
     font-size: 4em;
 }
 
@@ -425,6 +420,12 @@ hr {
     margin: 20px 20px 20px 0px;
     border-radius: 10px;
     color: #353839;
+}
+
+.single-container h4{
+    font-weight: 500;
+    color: #333;
+    font-family: "Montserrat", sans-serif;
 }
 
 #project-image img{
@@ -469,11 +470,18 @@ hr {
     height: 70vh;
     width: auto;
 }
+
 .contact ul li img {
     clip-path: circle(30px);
     filter: invert(19%) sepia(69%) saturate(5645%) hue-rotate(185deg) brightness(94%) contrast(101%);
+    transition: 7ms;
     width: 60px;
     height: 60px;
+}
+
+.contact ul li a img:hover{
+    filter: invert(49%) sepia(80%) saturate(2919%) hue-rotate(170deg) brightness(92%) contrast(94%);
+    transition: 7ms;
 }
   
 .contact p {
@@ -491,9 +499,54 @@ hr {
     text-decoration: underline;
 }
 
+#more-info{
+    font-size: 1em;
+    font-weight: 600;
+    margin-left: 80px;
+    color: #829397;
+}
 
+.error-background{
+    background-image: url(https://images.unsplash.com/photo-1554147090-e1221a04a025?q=80&w=2948&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    height: 100vh;
+    width: 100vw;
+    object-fit: scale-down;
+    z-index: 0;
+}
 
+.error-background div{
+    padding-top: 20vh;
+    text-align: center;
+}
 
+.error-background h1{
+    color: #353839;
+    font-size: 6em;
+}
+
+.error-background h3{
+    color: #353839;
+    font-family: "Montserrat", sans-serif;
+}
+
+.error-background h4{
+    color: #353839;
+    font-family: "Montserrat", sans-serif;
+}
+
+#contact-logos{
+    clip-path: circle(30px);
+    filter: invert(19%) sepia(69%) saturate(5645%) hue-rotate(185deg) brightness(94%) contrast(101%);
+    transition: 7ms;
+    width: 60px;
+    height: 60px;
+    margin-top: 0px;
+}
+
+#contact-logos:hover{
+    filter: invert(49%) sepia(80%) saturate(2919%) hue-rotate(170deg) brightness(92%) contrast(94%);
+    transition: 7ms;
+}
 
 
 
